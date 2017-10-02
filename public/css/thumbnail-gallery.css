@@ -21,9 +21,33 @@ body {
 
 .tz-gallery {
     padding: 40px;
+    /**/
+    position: relative;
+    display: inline-block;
+}
+/*.profile-pic {
+    position: relative;
+    display: inline-block;
 }
 
+.profile-pic:hover .edit {
+    display: block;
+}
+
+.edit {
+    padding-top: 7px;   
+    padding-right: 7px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.edit a {
+    color: #000;
+}*/
 .tz-gallery .thumbnail {
+    
     padding: 0;
     margin-bottom: 30px;
     background-color: #fff;
@@ -35,6 +59,22 @@ body {
 
 .tz-gallery .thumbnail:hover {
     transform: translateY(-10px) scale(1.02);
+}
+.tz-gallery .thumbnail:hover .edit {
+    display: block;
+}
+
+.edit {
+    padding-top: 7px;   
+    padding-right: 7px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.edit a {
+    color: #40000000;
 }
 
 .tz-gallery .lightbox img {
