@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use App\Property_image;
+use Image;
 class AdminController extends Controller
 {
     public function index1()
@@ -48,22 +49,20 @@ class AdminController extends Controller
 
     public function save(Request $request)
     {
-        $this->validate($request, [
+          $this->validate($request, [
             'file' => '
             required|max:10240|mimes:gif,jpeg,png,jpg,']);
         $tit1=$request->title;
         $file= $request->file('file');
-        $extension = $request->file('file')->getClientOriginalExtension();
+       $extension = $request->file('file')->getClientOriginalExtension();
        /*return $request;*/
-
-        if($file = $request->hasFile('file')) {
-            $file = $request->file('file') ;
-            $fileName = $file->getClientOriginalName() ;
-            //echo $fileName;
-            $folder=$request->property;
-            $destinationPath = public_path().'/img/'.$folder.'/';
-            $file->move($destinationPath,$fileName);
-        }
+  
+        $fileName = $tit1.'.'.$extension;
+        //echo $fileName;
+        $folder=$request->property;
+        $destinationPath = public_path('/img/'.$folder.'/');
+        Image::make($file->getRealPath())->resize(800, 600)->save( $destinationPath.'/'.$fileName);
+        
         $property_img = new Property_image;
         $property_img->header = $tit1;
         $property_img->details = $request->detail; 
@@ -72,18 +71,7 @@ class AdminController extends Controller
         $property_img->hover = $request->hover1;
         
         $property_img->save();
-
-       /* $img = Image::make($image->getRealPath());
-        $img->resize(100, 100, function ($constraint) {
-		   $constraint->aspectRatio();
-		})->save($destinationPath.'/'.$input['imagename']);
-
-        $destinationPath = public_path('/images');
-        $image->move($destinationPath, $input['imagename']);
-
-        $this->postImage->add($input);*/
-
-
+        
         $request->session()->flash('alert-success', 'Image is added succesfully!');
         $request = $request->property;
         if($request=="property1") return redirect()->action('AdminController@index2');

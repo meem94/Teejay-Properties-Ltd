@@ -25,15 +25,6 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
-    <!-- <style type="text/css">        
-                      
-            .topright {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 18px;
-}       
-        </style> -->
     <script type="text/javascript">
 /*to make alerts disappear automatically*/
   window.setTimeout(function() {
@@ -63,31 +54,55 @@
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav">
             
-                    @if(Route::currentRouteName() == 'admin')
-                        <li class="active"><a href="/admin">Home</a></li>
-                    @else
-                        <li><a href="/admin">Home</a></li>
-                    @endif
-
                     @if(Route::currentRouteName() == 'property1')
-                        <li class="active"><a href="/admincontol.property1">Property1</a></li>
+                        <li class="active"><a href="/admincontrol.property1">Property1</a></li>
                     @else
-                        <li><a href="/admincontol.property1">Property1</a></li>
+                        <li><a href="/admincontrol.property1">Property1</a></li>
                     @endif
             
                     @if(Route::currentRouteName() == 'property2')
-                        <li class="active"><a href="/admincontol.property2">Property2</a></li>
+                        <li class="active"><a href="/admincontrol.property2">Property2</a></li>
                     @else
-                        <li><a href="/admincontol.property2">Property2</a></li>
+                        <li><a href="/admincontrol.property2">Property2</a></li>
                     @endif
 
                     @if(Route::currentRouteName() == 'property3')
-                        <li class="active"><a href="/admincontol.property3">Property3</a></li>
+                        <li class="active"><a href="/admincontrol.property3">Property3</a></li>
                     @else
-                        <li><a href="/admincontol.property3">Property3</a></li>
+                        <li><a href="/admincontrol.property3">Property3</a></li>
                     @endif
                     
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                        <li><a href="{{ url('/login') }}" class="blue darken-3 white-text">
+                            Login</a></li>
+                            <li><a href="{{ url('/register') }}" class="blue darken-3 white-text">Register</a></li>
+                            @else
+                            <!-- <li><a href="{{ url('/register') }}" class="blue darken-3 white-text">Register</a></li> -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle blue darken-3 white-text" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    <i class="fa fa-user mr-1"></i> 
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                
+                                <ul class="dropdown-menu dropdown-primary" role="menu">
+                                    <li>
+                                        <a href="{{ url('/logout') }}"
+                                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        @endif
+                    </ul>
             </div>
         </div>
     </div>
@@ -171,22 +186,21 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <a class="lightbox" href="/img/{{$request}}/{{$dat->file_path}}">
-                        <!-- <span class="close">&times;</span> -->
-                        <img src="/img/{{$request}}/{{$dat->file_path}}">
-
-                        <div class="edit">
-                            <a type="submit" data-toggle="modal" data-target="#exampleModal{{$dat->id}}"    
-                                data-whatever="@mdo" style="margin-left: 50px;">
-                                <i class="fa fa-pencil fa-lg"></i>
-                            </a>
                         
-                            <a type="submit"  
-                                data-toggle="modal" data-target="#deleteModal{{$dat->id}}" 
-                                data-whatever="@mdo">
-                                <i class="fa fa-times fa-lg"></i>
-                            </a>
-                        </div>
+                        <img src="/img/{{$request}}/{{$dat->file_path}}">
                     </a>
+                    <div class="edit">
+                        <a type="submit" data-toggle="modal" data-target="#exampleModal{{$dat->id}}"    
+                            data-whatever="@mdo" style="margin-left: 50px;">
+                            <i class="fa fa-pencil fa-lg"></i>
+                        </a>
+                    
+                        <a type="submit"  
+                            data-toggle="modal" data-target="#deleteModal{{$dat->id}}" 
+                            data-whatever="@mdo">
+                            <i class="fa fa-times fa-lg"></i>
+                        </a>
+                    </div>
                     
                     <div class="caption">
                         <h3>{{$dat->header}}</h3>
