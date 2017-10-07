@@ -67,30 +67,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body>
-<!--header-top start here-->
-<div class="top-header">
-    <div class="container">
-        <div class="top-header-main">
-            <div class="col-md-4 top-social wow bounceInLeft" data-wow-delay="0.3s">
-                <ul>
-                    <li><h5>Follow Us :</h5></li>
-                    <li><a href="#"><span class="fb"> </span></a></li>
-                    <li><a href="#"><span class="tw"> </span></a></li>
-                    <li><a href="#"><span class="in"> </span></a></li>
-                    <li><a href="#"><span class="gmail"> </span></a></li>
-                </ul>
-            </div>
-            <div class="col-md-8 header-address wow bounceInRight" data-wow-delay="0.3s">
-                <ul>
-                    <li><span class="phone"> </span> <h6>(220) 280-31589</h6></li>
-                    <li><span class="email"> </span><h6><a href="mailto:info@example.com">Youremail@gmail.com</a></h6></li>
-                </ul>
-            </div>
-          <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-<!--header-top end here-->
 <!--header start here-->
     <!-- NAVBAR
         ================================================== -->
@@ -115,9 +91,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <nav class="cl-effect-16" id="cl-effect-16">
                       <ul class="nav navbar-nav">
                        <li><a class="active" href="index.html" data-hover="Home">Home</a></li>
-                        <li><a href="/property" data-hover="Property1">Property1</a></li>
-                        <li><a href="/property" data-hover="Property2">Property2</a></li>
-                        <li><a href="/property" data-hover="Property3">Property 3</a></li>
+                        <li><a href="/property_1" data-hover="Property1">Property1</a></li>
+                        <li><a href="/property_2" data-hover="Property2">Property2</a></li>
+                        <li><a href="/property_3" data-hover="Property3">Property 3</a></li>
                         <li><a href="shortcodes.html" data-hover="Book">Book</a></li>
                         <li><a href="contact.html" data-hover="Contact">Contact</a></li>                        
                       </ul>

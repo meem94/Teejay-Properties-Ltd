@@ -49,27 +49,24 @@ class AdminController extends Controller
 
     public function save(Request $request)
     {
-          $this->validate($request, [
-            'file' => '
-            required|max:10240|mimes:gif,jpeg,png,jpg,']);
-        $tit1=$request->title;
+    
+       /* $this->validate($request, ['file' => '
+            required|max:10240|mimes:gif,jpeg,png,jpg']);*/
         $file= $request->file('file');
-       $extension = $request->file('file')->getClientOriginalExtension();
-       /*return $request;*/
+        $tit1= $request->title;
+        $extension = $file->getClientOriginalExtension();
+       // return $extension;
   
         $fileName = $tit1.'.'.$extension;
         //echo $fileName;
         $folder=$request->property;
         $destinationPath = public_path('/img/'.$folder.'/');
-        Image::make($file->getRealPath())->resize(800, 600)->save( $destinationPath.'/'.$fileName);
+        $file->move($destinationPath,$fileName);
         
         $property_img = new Property_image;
         $property_img->header = $tit1;
-        $property_img->details = $request->detail; 
         $property_img->file_path = $fileName;
         $property_img->category = $request->property;
-        $property_img->hover = $request->hover1;
-        
         $property_img->save();
         
         $request->session()->flash('alert-success', 'Image is added succesfully!');
@@ -88,7 +85,8 @@ class AdminController extends Controller
         $folder=$request->property;
         $destinationPath = public_path().'/img/'.$folder.'/';
         $destinationPath = $destinationPath.$request->filepath;
-        \File::delete($destinationPath);
+        /*return $destinationPath;
+        File::delete($destinationPath);*/
 
         $request->session()->flash('alert-success', 'Image is deleted succesfully!');
         $request = $request->property;
@@ -101,9 +99,7 @@ class AdminController extends Controller
     {
         $edit_pic = Property_image::find($request->rid);
         $edit_pic->header = $request->edit_title;
-        $edit_pic->details = $request->edit_detail;
         $edit_pic->category = $request->property;
-        $edit_pic->hover = $request->edit_hover;
         $edit_pic->save();
         
         $request->session()->flash('alert-success', 'Image detail is updated succesfully!');

@@ -15,10 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 Auth::routes();
-/*Route::get('/home', 'HomeController@index')->name('home');*/
+Route::get('/home',['as'=>'property1','uses'=>'AdminController@index2']);
 
+Route::get('/property_1',['as'=>'property1','uses'=>'PropertyController@index1']);
+Route::get('/property_2',['as'=>'property2','uses'=>'PropertyController@index2']);
+Route::get('/property_3',['as'=>'property3','uses'=>'PropertyController@index3']);
 
-Route::get('/property',['as'=>'property','uses'=>'PropertyController@index']);
 Route::group(['middleware' => ['auth']], function() {
 	Route::get('/admin',['as'=>'admin','uses'=>'AdminController@index1']);
 	Route::get('/admincontrol.property1',['as'=>'property1','uses'=>'AdminController@index2']);
@@ -28,4 +30,3 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::POST('/admin/delete/{id}', ['as'=>'DeleteProperyImage','uses'=>'AdminController@delete']);
 	Route::POST('/admin/edit/{id}', ['as'=>'EditProperyImage','uses'=>'AdminController@update']);
 });
-

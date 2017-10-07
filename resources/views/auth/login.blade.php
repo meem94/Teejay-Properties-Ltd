@@ -44,7 +44,8 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                 <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+                                 <button type="submit" class="btn btn-primary btn-block btn-large">Let me in...</button>
+                                
                     
                             </div>
                         </div>

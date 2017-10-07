@@ -25,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script type="text/javascript">
 /*to make alerts disappear automatically*/
   window.setTimeout(function() {
@@ -72,27 +74,50 @@
                         <li><a href="/admincontrol.property3">Property3</a></li>
                     @endif
                     
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}" class="blue darken-3 white-text">
-                            Login</a></li>
-                            <li><a href="{{ url('/register') }}" class="blue darken-3 white-text">Register</a></li>
-                            @else
-                            <!-- <li><a href="{{ url('/register') }}" class="blue darken-3 white-text">Register</a></li> -->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle blue darken-3 white-text" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    <i class="fa fa-user mr-1"></i> 
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-                                
-                                <ul class="dropdown-menu dropdown-primary" role="menu">
-                                    <li>
-                                        <a href="{{ url('/logout') }}"
-                                        onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();">
-                                        Logout
+                
+                
+                    <!-- Authentication Links -->
+                    @if (Auth::guest())
+                    <li><a href="{{ url('/login') }}" class="blue darken-3 white-text">
+                        Login</a></li>
+                        
+                    @else
+                        
+                        @if(Route::currentRouteName() == 'admin')
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-user mr-1"></i> 
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+                            
+                            <ul class="dropdown-menu dropdown-primary" role="menu">
+                                <li>
+                                    <a class="white-text" style="text-decoration-color: white;" href="{{ url('/logout') }}"
+                                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                    Logout
+                                    </a>
+
+                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+
+                        @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-user mr-1"></i> 
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+                            
+                            <ul class="dropdown-menu dropdown-primary" role="menu">
+                                <li>
+                                    <a href="{{ url('/logout') }}"
+                                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                    Logout
                                     </a>
 
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
@@ -102,7 +127,8 @@
                             </ul>
                         </li>
                         @endif
-                    </ul>
+                    @endif
+                </ul>
             </div>
         </div>
     </div>
@@ -160,19 +186,10 @@
                         <input required type="text" class="form-control" id="title-name" name="title">
                     </div>
                     
-                    <div class="modal-body">
-                        <label for="message-text" class="form-control-label">Details:</label>
-                        <textarea required class="form-control" id="message-text" name="detail"></textarea>
-                    </div>
-
-                    <div class="modal-body">
-                        <label for="hover-text" class="form-control-label">Hover:</label>
-                        <input required type="text" class="form-control" id="hover-text" name="hover1" placeholder="0 / 1">
-                    </div>
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-success">Save</button>
                     </div>
                 </form>
             </div>
@@ -204,7 +221,7 @@
                     
                     <div class="caption">
                         <h3>{{$dat->header}}</h3>
-                        <p>{{$dat->details}}</p>
+                     
                     </div>
                 </div>
                 <div class="modal fade" id="deleteModal{{$dat->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -221,10 +238,10 @@
                             <input type="hidden" name="property" value="{{$request}}">
                             <input type="hidden" name="rid" value="{{$dat->id}}">
                             <input type="hidden" name="filepath" value="{{$dat->file_path}}">
-                            <button style="margin-left: 30px;" type="submit" class="btn btn-primary btn-md">
+                            <button style="margin-left: 30px;" type="submit" class="btn btn-danger btn-md">
                               DELETE
                             </button>
-                            <button style="margin-left: 10px;" type="submit" data-dismiss="modal" class="btn btn-primary btn-md">
+                            <button style="margin-left: 10px;" type="submit" data-dismiss="modal" class="btn btn-default btn-md">
                               CANCEL
                             </button>
 
@@ -257,20 +274,7 @@
                               <input autofocus required="" type="text" name="edit_title" value="{{$dat->header}}" 
                               class="form-control"  >
                             </div>
-                            <div class="form-group">
-                              <label   class="form-control-label"> 
-                                Details:
-                              </label>
-                              <input required="" type="text" name="edit_detail" class="form-control" value="{{$dat->details}}" 
-                              >
-                            </div>
-                            <div class="form-group">
-                              <label   class="form-control-label"> 
-                                Hover:
-                              </label>
-                              <input required="" type="text" name="edit_hover" class="form-control" value="{{$dat->hover}}" 
-                              >
-                            </div>
+                           
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
                                     Close</button>

@@ -10,12 +10,21 @@ use Illuminate\Support\Facades\Storage;
 
 class PropertyController extends Controller
 {
-     public function index()
+     public function index1()
     {
-      	 $data=DB::table('property_images')->where('category', '=', 'property1')
-                ->orderBy('id','asc')->get();
-        $request="property1";
-        return view('property', compact('data', 'request'));
-        return view('property');
+      	$data=DB::table('property_images')->where('category', '=', 'property1')->orderBy('id','asc')->get();
+        return view('property1', compact('data', 'request'));
+    }
+
+     public function index2()
+    {
+      	$data=DB::table('property_images')->where('category', '=', 'property2')->orderBy('id','asc')->get();
+        return view('property2', compact('data', 'request'));
+    }
+
+     public function index3()
+    {
+      	$data=DB::table('property_images')->where('category', '=', 'property3')->orderBy('id','asc')->get();
+        return view('property3', compact('data', 'request'));
     }
 }

@@ -263,6 +263,21 @@ nav a:focus {
     min-height:660px;
     background-size: cover;
 }
+.banner1 {
+    background: url(../images/property1.jpg)no-repeat;
+    min-height:660px;
+    background-size: cover;
+}
+.banner2 {
+    background: url(../images/property2.jpg)no-repeat;
+    min-height:660px;
+    background-size: cover;
+}
+.banner3 {
+    background: url(../images/property3.jpg)no-repeat;
+    min-height:660px;
+    background-size: cover;
+}
 .banner-main {
     width: 50%;
     margin: 14em auto 0em;
