@@ -66,12 +66,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div id="navbar" class="navbar-collapse collapse">
                     <nav class="cl-effect-16" id="cl-effect-16">
                       <ul class="nav navbar-nav">
-                       <li><a class="active" href="index.html" data-hover="Home">Home</a></li>
-                        <li><a href="/property_1" data-hover="Property1">Property1</a></li>
-                        <li><a href="/property_2" data-hover="Property2">Property2</a></li>
-                        <li><a href="/property_3" data-hover="Property3">Property 3</a></li>
-                        <li><a href="shortcodes.html" data-hover="Book">Book</a></li>
-                        <li><a href="contact.html" data-hover="Contact">Contact</a></li>                        
+                       <li><a href="{{ url('/') }}" data-hover="Home">Home</a></li>
+                        <li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>                     
                       </ul>
                     </nav>
 
@@ -142,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<i style="margin-left: 20px;"></i><b>Cleaning Fee :</b> £30
 								</p>	
 								<p class="text-center" style="color: blue; margin-top: 30px; font-size: 25px; font-family: Comic Sans MS;">
-									 <i><b>For booking or more details, <a href={{$link}}><u>click here!</u></a></b><i>
+									 <i><b>For booking or more details, <a target="_blank" href={{$link}}><u>click here!</u></a></b><i>
 								</p>	
 							</div> 
 							<div class="clearfix"> </div>

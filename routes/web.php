@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/home',['as'=>'property1','uses'=>'AdminController@index2']);
+Route::get('/test',['as'=>'12fdg','uses'=>'Test@index']);
 
+Route::view('/our_properties', 'our_properties');
 Route::get('/property_1',['as'=>'property1','uses'=>'PropertyController@index1']);
 Route::get('/property_2',['as'=>'property2','uses'=>'PropertyController@index2']);
 Route::get('/property_3',['as'=>'property3','uses'=>'PropertyController@index3']);

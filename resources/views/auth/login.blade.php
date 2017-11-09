@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Login Form</title>
+  <title>Admin Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="css_login/style.css" rel="stylesheet" type="text/css" media="all"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -44,9 +44,14 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                 <button type="submit" class="btn btn-primary btn-block btn-large">Let me in...</button>
-                                
-                    
+                                <button type="submit" class="btn btn-primary btn-block btn-large">Let me in...</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4" style="margin-top: 10px;">
+                                <a style="color: white; margin-left: 60px;" href="{{ route('password.request') }}">
+                                    Forgot Your Password?
+                                </a> 
                             </div>
                         </div>
                     </form>
