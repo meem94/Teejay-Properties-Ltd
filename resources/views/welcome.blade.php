@@ -84,14 +84,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <span class="icon-bar"></span>
                           </button>
                           <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-                                <a class="navbar-brand" style="margin-bottom: 10px;" href="index.html"><img src="images/logo1.png" /></a>
+                                <a class="navbar-brand" href="{{ url('/') }}"><img src="images/new.png" /></a>
                           </div>
                       </div>
                     <div id="navbar" class="navbar-collapse collapse">
                     <nav class="cl-effect-16" id="cl-effect-16">
                       <ul class="nav navbar-nav">
                        <li><a class="active" href="{{ url('/') }}" data-hover="Home">Home</a></li>
-                        <li><a href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>                   
+                        <li><a href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+                        <li><a href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
                       </ul>
                     </nav>
 
