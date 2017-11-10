@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--header start here-->
 	<!-- NAVBAR
 		================================================== -->
-		<div class="header">
+	<div class="header">
     <div class="fixed-header">  
 
             <div class="navbar-wrapper">
@@ -60,15 +60,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <span class="icon-bar"></span>
                           </button>
                           <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-                                <a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+                                <a class="navbar-brand"  href="{{ url('/') }}"><img src="images/logo.png" /></a>
                           </div>
                       </div>
                     <div id="navbar" class="navbar-collapse collapse">
                     <nav class="cl-effect-16" id="cl-effect-16">
                       <ul class="nav navbar-nav">
-                       <li><a href="{{ url('/') }}" data-hover="Home">Home</a></li>
-                        <li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>                 
-                      </ul>                     
+                       <li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
+                        <li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+                        <li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
                       </ul>
                     </nav>
 
@@ -83,6 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--header end here-->
 		<!--header end here-->
 		<!-- image slider starts here -->
+		
 		<div class="banner1">
     		<div class="container">
         		<div class="banner-main wow zoomIn" data-wow-delay="0.3s">
@@ -90,6 +91,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        </div>
 		    </div>
 		</div>
+	
 		<!-- image slider ends here -->
 		
 		<!--room start here-->

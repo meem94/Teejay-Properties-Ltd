@@ -265,8 +265,10 @@ nav a:focus {
 }
 .banner1 {
     background: url(../images/property1.jpg)no-repeat;
-    min-height:660px;
+    width: auto;
+    height: auto;
     background-size: cover;
+   
 }
 .banner2 {
     background: url(../images/property2.jpg)no-repeat;

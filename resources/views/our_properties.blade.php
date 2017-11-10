@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--header start here-->
 	<!-- NAVBAR
 		================================================== -->
-		<div class="header">
+	<div class="header">
     <div class="fixed-header">  
 
             <div class="navbar-wrapper">
@@ -60,14 +60,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <span class="icon-bar"></span>
                           </button>
                           <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-                                <a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+                                <a class="navbar-brand"  href="{{ url('/') }}"><img src="images/logo.png" /></a>
                           </div>
                       </div>
                     <div id="navbar" class="navbar-collapse collapse">
                     <nav class="cl-effect-16" id="cl-effect-16">
                       <ul class="nav navbar-nav">
-                       <li><a href="{{ url('/') }}" data-hover="Home">Home</a></li>
-                        <li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>               
+                       <li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
+                        <li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+                        <li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
                       </ul>
                     </nav>
 
@@ -92,7 +93,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						
 						<div class="rooms-left wow slideInLeft" data-wow-delay="0.3s">
 							<div class="col-md-4 rooms-text">
-								<h2>5 Bed HOUSE! 2 Bath! Cute GARDEN! Stoke Newington</h2>
+								<a href="{{ url ('/property_1') }}"> <h2>5 Bed HOUSE! 2 Bath! Cute GARDEN! Stoke Newington</h2> </a>
 								<p style="margin-top: 15px;">This is a maisonette (two storeys) 5 bed room house with living room with a nice garden.4 bed room & one bathroom in upstairs. 2 room (1 bed room & 1 Living room in downstairs which decorated by a double bed, 1 sofa bed, bedside table, 1 wardrobe & TV), Kitchen & 2nd bathroom in downstairs. Room contains double bed, sofa bed, sofa, bedside table, wardrobe, chest top drawer. <br />
 								<a href="{{ url ('/property_1') }}"><u>Read More...</u></a>
 								</p>
