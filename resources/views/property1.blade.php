@@ -49,7 +49,7 @@ $link = 'https://www.airbnb.co.uk/rooms/20995187?location=Leswin%20Place%2C%20Lo
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<div class="logo wow slideInLeft" data-wow-delay="0.3s">
+						<div class="wow fadeInLeft animated" data-wow-delay="0.3s">
 							<a class="navbar-brand" href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
 						</div>
 

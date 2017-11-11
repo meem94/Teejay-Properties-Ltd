@@ -1630,9 +1630,9 @@ h3.typo1 {
 }
 .contact-left input[type="submit"] {
   font-size: 1em;
-  color: #ac2048;
+  color: #FFFFFF;
   padding: 0.4em 1.5em;
-  background: #F5AF33;
+  background: #ac2048;
   border: none;
   margin: 0.5em 0em 0em 0em;
   outline: none;
@@ -1975,6 +1975,7 @@ h3.typo1 {
 	padding: 3em 0em;
 }
 }
+
 @media(max-width:767px){
 .navbar-toggle {
     margin-top: 0px !important;
@@ -1985,10 +1986,10 @@ h3.typo1 {
     padding: 6px 7px;
 }
 .navbar-inverse .navbar-toggle {
-    background: #6F6F8C;
+    background: #ac2048;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background: #F5AF33 !important;
+    background: #ac2048 !important;
 }
 .navbar-nav {
     float: none !important;
