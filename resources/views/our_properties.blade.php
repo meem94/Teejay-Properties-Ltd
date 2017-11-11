@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-
+<div style="overflow-x:hidden;">
 	<?php
 	$link = 'https://www.airbnb.co.uk/rooms/20995187?location=Leswin%20Place%2C%20London%20N16%207NJ&adults=1&children=0&infants=0&s=ZGqAJ0P9';
 	?>
@@ -170,5 +170,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		new WOW().init();
 	</script>
 	<script src="js_home/bootstrap.min.js"></script>
+</div>
 </body>
 </html>

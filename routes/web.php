@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/test',['as'=>'12fdg','uses'=>'Test@index']);
+Route::post('/sendmail', 'MailController@send');
 
 Route::view('/our_properties', 'our_properties');
 Route::view('/contact', 'contact');

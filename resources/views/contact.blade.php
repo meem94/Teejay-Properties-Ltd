@@ -45,15 +45,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
-						<nav class="cl-effect-16" id="cl-effect-16">
-							<ul class="nav navbar-nav">
-								<li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
-								<li><a href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
-								<li><a class="active" href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
-							</ul>
-						</nav>
-
-					</div>
+                            <nav class="cl-effect-16" id="cl-effect-16">
+                                <ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
+                                    <li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
+                                    <li><a  href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+                                    <li><a  class="active"  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
+                                </ul>
+                            </nav>
+                        </div>
 					<div class="clearfix"> </div>
 				</nav>
 			</div>
@@ -62,6 +61,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 </div>
 <!--header end here-->
+<!--banner  start hwew-->
+<div class="banner">
+    <div class="container">
+        <div class="banner-main wow zoomIn" data-wow-delay="0.3s">
+            <h2>TeeJay Properties LTD</h2>
+            <h6>Welcome To Our Properties</h6>
+            <p>A cheaper alternative to hotel accommodation or serviced apartments.</p>
+        </div>
+    </div>
+</div>
+<!--BANNER END HERE-->
 <!--contact start here-->
 <div class="contact">
 	<div class="container">
@@ -71,19 +81,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="contact-bottom">
 				<div class="col-md-9 contact-left">
-					<form>
-						<input type="text" placeholder="Name">
-						<input type="text" class="email" placeholder="Email">
-						<textarea  placeholder="Message" required=""></textarea>
-						<input type="submit" value="Send">
+					 <form method="POST" id="contact-form" class="form-horizontal" action="{{ url('/sendmail') }}" onSubmit="alert('Thank you for your feedback!');"> 
+					 	 <input type="hidden" name="_token" value="{{ csrf_token() }}">
+						<input type="text" name="Name" id="Name" placeholder="Name" required>
+						<input type="text" class="email" name="Email" id="Email" placeholder="Email" required>
+						<textarea  name="Message" placeholder="Message" required></textarea>
+						<input type="submit" name="submit" value="Submit" class="btn btn-success">
 					</form>
 				</div>
 				<div class="col-md-3 contact-right">
-					<h1>Address</h1>
-					<p>Company Office</p>
-					<p>voluptatem nesciunt.</p>
+					<h1>Phone</h1>
 					<p>+880 5558 568 78541</p>
-					<p><a href="mailto:info@example.com">user@gmail.com</a></p>
+					<p>jaytholiday@gmail.com</a></p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -91,13 +100,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 </div>
 <!--contact end here-->
-<!--map start here-->
-<div class="map">
-	<div class="container">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.007583421!2d-73.97800349999999!3d40.7056308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1415253431785"  frameborder="0" style="border:0"> </iframe>
-	</div>
-</div>
-<!--map end here-->
+
 <!--copy rights start here-->
 <div class="copy-right">
 	<div class="container">
