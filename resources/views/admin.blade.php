@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Teejay Properties Gallery</title>
+    <meta name="keywords" content="Teejay Properties LTD, Teejay Properties, Teejay" />
+    <link rel="shortcut icon" type="image/png" href="favicon12.ico">
+    <title>Teejay Properties | Admin | Gallery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 

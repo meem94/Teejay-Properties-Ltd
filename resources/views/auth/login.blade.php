@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Login</title>
+  <link rel="shortcut icon" type="image/png" href="favicon12.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="css_login/style.css" rel="stylesheet" type="text/css" media="all"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>

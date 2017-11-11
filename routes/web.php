@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Auth::routes();
-Route::get('/home',['as'=>'property1','uses'=>'AdminController@index2']);
 Route::get('/test',['as'=>'12fdg','uses'=>'Test@index']);
 
 Route::view('/our_properties', 'our_properties');
