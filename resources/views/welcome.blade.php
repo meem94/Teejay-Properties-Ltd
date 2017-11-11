@@ -84,19 +84,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <span class="icon-bar"></span>
                           </button>
                           <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-                                <a class="navbar-brand"  href="{{ url('/') }}"><img src="images/logo.png" /></a>
+                                <a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
                           </div>
                       </div>
                     <div id="navbar" class="navbar-collapse collapse">
-                    <nav class="cl-effect-16" id="cl-effect-16">
-                      <ul class="nav navbar-nav">
-                       <li><a class="active" href="{{ url('/') }}" data-hover="Home">Home</a></li>
-                        <li><a href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
-                        <li><a href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
-                      </ul>
-                    </nav>
+                        <nav class="cl-effect-16" id="cl-effect-16">
+                            <ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
+                                <li><a  class="active" href="{{ url('/') }}" data-hover="Home">Home</a></li>
+                                <li><a  href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+                                <li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
+                            </ul>
+                        </nav>
 
-                    </div>
+                            </div>
                     <div class="clearfix"> </div>
                      </nav>
                   </div>
@@ -108,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--banner  start hwew-->
 <div class="banner">
     <div class="container">
-        <div class="banner-main">
+        <div class="banner-main wow zoomIn" data-wow-delay="0.3s">
             <h2>TeeJay Properties LTD</h2>
             <h6>Welcome To Our Properties</h6>
             <p>A cheaper alternative to hotel accommodation or serviced apartments.</p>
@@ -119,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--leaves start here-->
 <div class="leaves">
     <div class="container">
-        <div class="leaves-main">
+        <div class="leaves-main wow zoomIn" data-wow-delay="0.3s">
             <h1>All That You Need</h1>
             <h6>100% Friendly services</h6>
             <p>We provide short let which is a property that can be let from a few days to a few weeks.All our short let properties are furnished to a high standard with appliances and household items such as towels, linen, crockery and electrical goods are supplied.Its suitable for students, professionals and tourists visiting London.</p>
@@ -131,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="information">
     <div class="container">
         <div class="information-main">
-              <div class="information-grid five-star">
+              <div class="information-grid five-star wow slideInLeft" data-wow-delay="0.3s">
                 <div class="col-md-4 hotel-info">
                     <div class="info-left">
                         <img src="images/s1.png" alt="">
@@ -164,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="clearfix"> </div>
               </div>
-              <div class="information-grid">
+              <div class="information-grid wow slideInRight" data-wow-delay="0.3s">
                 <div class="col-md-4 hotel-info">
                     <div class="info-left">
                         <img src="images/s3.png" alt="">
@@ -193,9 +193,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <h4>Do not disturb</h4>
                         <p>It is like your second home.You are not confined to one room, do not have to share breakfast with strangers and won't be disturbed by noisy guest.</p>
                     </div>
-                  <div class="clearfix"> </div>
+                  
                 </div>
-                <div class="clearfix"> </div>
+                
               </div>
             <div class="clearfix"> </div>
         </div>
@@ -205,40 +205,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--branches start here-->
 <div class="branches">
-        <div class="branches-main">
+        <div class="branches-main wow zoomIn" data-wow-delay="0.3s">
             <div class="branches-top">
                 <h3>Our Properties</h3>
             </div>
             <div  id="effect-5" class="branch-btm">
                 <div  class="col-md-3 branch-gd-main" >                 
                     <div class="branch-gd  no-mar"> 
-                        <a href="room.html">
+                        <a href="{{ url('/property_1') }}">
                         <img src="img/property1/1.jpg" alt="" class="img-responsive">
                        </a>
                     </div>                 
                 </div>              
                 <div class="col-md-3 branch-gd-main">
-                    <div class="branch-gd went-branc"><a href="room.html">
+                    <div class="branch-gd went-branc">
+                        <a href="{{ url('/property_1') }}">
                         <img src="img/property1/2.jpg" alt="" class="img-responsive">
                         </a>
                     </div>
-                    <div class="branch-gd went-branc"><a href="room.html">
+                    <div class="branch-gd went-branc">
+                        <a href="{{ url('/property_2') }}">
                         <img src="img/property2/1.jpg" alt="" class="img-responsive">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 branch-gd-main">
-                    <div class="branch-gd"><a href="room.html">
+                    <div class="branch-gd">
+                        <a href="{{ url('/property_2') }}">
                         <img src="img/property2/2.jpg" alt="" class="img-responsive">
                         </a>
                     </div>
-                    <div class="branch-gd"><a href="room.html">
+                    <div class="branch-gd">
+                        <a href="{{ url('/property_3') }}">
                         <img src="img/property3/1.jpg" alt="" class="img-responsive">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 branch-gd-main">
-                  <div class="branch-gd went-branc2"><a href="room.html">
+                  <div class="branch-gd went-branc2">
+                    <a href="{{ url('/property_') }}">
                     <img src="img/property3/2.jpg" alt="" class="img-responsive">
                     </a>
                   </div>

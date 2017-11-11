@@ -59,18 +59,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-                          <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-                                <a class="navbar-brand"  href="{{ url('/') }}"><img src="images/logo.png" /></a>
+                           <div class="logo wow slideInLeft" data-wow-delay="0.3s">
+                                <a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
                           </div>
                       </div>
                     <div id="navbar" class="navbar-collapse collapse">
-                    <nav class="cl-effect-16" id="cl-effect-16">
-                      <ul class="nav navbar-nav">
-                       <li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
-                        <li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
-                        <li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
-                      </ul>
-                    </nav>
+						<nav class="cl-effect-16" id="cl-effect-16">
+							<ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
+								<li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
+								<li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+								<li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
+							</ul>
+						</nav>
+
+					</div>
 
                     </div>
                     <div class="clearfix"> </div>
@@ -87,13 +89,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<div class="rooms-main">
 					<div class="room-head">
-						<h3>Our Properties</h3>
+						<h3 class="wow fadeInLeft animated" data-wow-delay=".5s">Our Properties</h3>
 					</div>
 					<div class="rooms-top">
 						
 						<div class="rooms-left wow slideInLeft" data-wow-delay="0.3s">
 							<div class="col-md-4 rooms-text">
-								<a href="{{ url ('/property_1') }}"> <h2>5 Bed HOUSE! 2 Bath! Cute GARDEN! Stoke Newington</h2> </a>
+								<a href="{{ url ('/property_1') }}"> <h2 style="color:#ac2048;">5 Bed HOUSE! 2 Bath! Cute GARDEN! Stoke Newington</h2> </a>
 								<p style="margin-top: 15px;">This is a maisonette (two storeys) 5 bed room house with living room with a nice garden.4 bed room & one bathroom in upstairs. 2 room (1 bed room & 1 Living room in downstairs which decorated by a double bed, 1 sofa bed, bedside table, 1 wardrobe & TV), Kitchen & 2nd bathroom in downstairs. Room contains double bed, sofa bed, sofa, bedside table, wardrobe, chest top drawer. <br />
 								<a href="{{ url ('/property_1') }}"><u>Read More...</u></a>
 								</p>
@@ -107,9 +109,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="clearfix"> </div>
 						</div>
 
-						<div class="rooms-left wow slideInRight" data-wow-delay="0.3s">
+						<div class="rooms-left wow slideInRight" data-wow-delay="0.1s">
 							<div class="col-md-4 rooms-text">
-								<h2>Luxury 3 Bed House in Stock Newington</h2>
+								<a href="{{ url ('/property_2') }}"><h2 style="color:#ac2048;">Luxury 3 Bed House in Stock Newington</h2></a>
 								<p style="margin-top: 15px;">This a new build modern 3 bed room house with a huge living room & back garden; all new furniture, under floor heating system (temperature adjuster in every room) and hot water facilities with very good pressure of water.
 								3 bed room in upstairs. 2 room is double which contains double bed, sofa, bedside table, wardrobe etc.
 								Single room contains a double bed, chest top drawer. <br />
@@ -125,9 +127,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="clearfix"> </div>
 						</div>
 
-						<div class="rooms-left wow slideInLeft" data-wow-delay="0.3s">
+						<div class="rooms-left wow slideInLeft" data-wow-delay="0.1s">
 							<div class="col-md-4 rooms-text">
-								<h2>Studio flat in King's Cross</h2>
+								<a href="{{ url ('/property_2') }}"><h2 style="color:#ac2048;">Studio flat in King's Cross</h2></a>
 								<p style="margin-top: 15px;">It's a modern studio flat with separate kitchen (No door in between kitchen and room but it separated by a stairs, please see the photos), separate bathroom.Perfect flat for small families up to 2 people, Bright and quiet studio flat with its own entrance, separate kitchen and bathroom. Double bed, wardrobe, Tv, wifi, fully equipped kitchen, hairdryer,iron etc available. <br />
 								<a href="{{ url ('/property_3') }}"><u>Read More...</u></a>
 								</p>
@@ -158,55 +160,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</script>
 
 		<!--room end here-->
-		<!--footer start here-->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-main">
-					<div class="col-md-3 ftr-grid wow zoomIn" data-wow-delay="0.3s">
-						<div class="ftr-logo">
-							<img src="images/ftr-logo.png"  alt="">
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-						<a href="single.html" class="ftr-btn">Read More</a>
-					</div>
-					<div class="col-md-3 ftr-grid ftr-mid wow zoomIn" data-wow-delay="0.3s">
-						<h3>Address</h3>
-						<span class="ftr-line flm"> </span>
-						<p>Eye Associates Of Virginia?</p>
-						<p>5875 Bremo Road </p>
-						<p>Richmond, VA(Virginia) 23226 </p>
-						<p>(804) 287-4216 </p>
-						<p>Alice Merriman</p>
-
-					</div>
-					<div class="col-md-3 ftr-grid ftr-rit wow zoomIn" data-wow-delay="0.3s">
-						<h3>Contact Us</h3>
-						<form>
-							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-							<input type="submit" value="Send" />
-						</form>
-						<ul class="ftr-icons">
-							<li><a href="#"><span class="fa"> </span></a></li>
-							<li><a href="#"><span class="tw"> </span></a></li>
-							<li><a href="#"><span class="link"> </span></a></li>
-							<li><a href="#"><span class="gmail"> </span></a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 ftr-grid ftr-last-gd ftr-rit wow zoomIn" data-wow-delay="0.3s">
-						<h3>Quick Link</h3>
-						<ul class="ftr-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Services </a></li>
-							<li><a href="room.html">Rooms</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-		<!--footer end here-->
+		
 		<!-- <!--copy rights start here-->
 		<div class="copy-right">
 			<div class="container">
@@ -214,6 +168,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<p>© 2016 Mr Hotel. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 				</div>
 			</div>
-		</div> -->
+		</div> 
 	</body>
 	</html>

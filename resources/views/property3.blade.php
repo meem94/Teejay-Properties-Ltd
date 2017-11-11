@@ -8,10 +8,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 	<title>TeeJay Properties LTD</title>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="css_home/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js_home/jquery-1.11.0.min.js"></script>
@@ -39,129 +39,111 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
+
 	<?php
 	 $link = 'https://www.airbnb.co.uk/rooms/20994493?location=wc1x%209ds&adults=1&children=0&infants=0&s=teSmnFwh';
 	?>
-
 	<!--header start here-->
 	<!-- NAVBAR
 		================================================== -->
-	<div class="header">
-    <div class="fixed-header">  
+		<div class="header">
+			<div class="fixed-header">  
 
-            <div class="navbar-wrapper">
-              <div class="container">
-                <nav class="navbar navbar-inverse navbar-static-top">
-                     <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                          <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-                                <a class="navbar-brand"  href="{{ url('/') }}"><img src="images/logo.png" /></a>
-                          </div>
-                      </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                    <nav class="cl-effect-16" id="cl-effect-16">
-                      <ul class="nav navbar-nav">
-                       <li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
-                        <li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
-                        <li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
-                      </ul>
-                    </nav>
+				<div class="navbar-wrapper">
+					<div class="container">
+						<nav class="navbar navbar-inverse navbar-static-top">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="logo wow slideInLeft" data-wow-delay="0.3s">
+									<a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
+								</div>
+							</div>
+							<div id="navbar" class="navbar-collapse collapse">
+								<nav class="cl-effect-16" id="cl-effect-16">
+									<ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
+										<li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
+										<li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+										<li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
+									</ul>
+								</nav>
 
-                    </div>
-                    <div class="clearfix"> </div>
-                     </nav>
-                  </div>
-                   <div class="clearfix"> </div>
-            </div>
-     </div>
-</div>
-<!--header end here-->
-		<!--header end here-->
-		<!-- image slider starts here -->
-		<div class="banner3">
-    		<div class="container">
-        		<div class="banner-main wow zoomIn" data-wow-delay="0.3s">
-		            <h2>Studio flat in King's Cross</h2>
-		        </div>
-		    </div>
-		</div>
-		<!-- image slider ends here -->
-		
-		<!--room start here-->
-		<div class="rooms">
-			<div class="container">
-				<div class="rooms-main">
-					<div class="room-head">
-						<h3>Studio flat,own Kitchen & toilet, internet, King's Cros</h3>
-					</div>
-					<div class="rooms-top">
-						
-						<div class="rooms-left wow slideInLeft" data-wow-delay="0.3s">
-							<div class="rooms-text">
-								<h2>Description</h2>
-								<h4>£68 per night</h4>
-								<p style="margin-top: 10px;">It's a modern studio flat with separate kitchen (No door in between kitchen and room but it separated by a stairs, please see the photos), separate bathroom.Perfect flat for small families up to 2 people, Bright and quiet studio flat with its own entrance, separate kitchen and bathroom. Double bed, wardrobe, Tv, wifi, fully equipped kitchen, hairdryer,iron etc available.
-
-								This appartement is amazingly located on King’s cross Road which runs between Chancery Lane and Kings Cross tube stations providing easy access to tremendous tube lines (Central/Victoria/Piccadilly/Northern/Circle/Hammersmith & City/Metropolitan) as well as St Pancras International mainline station. Due to its strategic position it is also within walking distance of the West End and the City. 
-								Two restaurants in ground floor where you will get indian delicious food, Costa coffee and a small supermarket just across the road.</p>
-								
-							</div> 
+							</div>
 							<div class="clearfix"> </div>
-						</div>
-						<div class="rooms-left1 wow slideInRight" data-wow-delay="0.3s">
-							<div class="rooms-text">
-								<p class="text-center" style="color: black;">
-									<i class="fa fa-check" style="margin-top: 10px; color: black;"></i>Family/Kid Friendly
-									<i class="fa fa-check" style="margin-left: 20px;"></i>Wireless Internet
-									<i class="fa fa-check" style="margin-left: 20px; color: black;"></i>Dryer
-									<i class="fa fa-check" style="margin-left: 20px;"></i>Tv
-								</p>
-								<p class="text-center" style="color: black;">
-									<i class="fa fa-check" style="margin-top: 20px; color: black;"></i>Shampoo
-									<i class="fa fa-check" style="margin-left: 20px;"></i>Iron
-									<i class="fa fa-check" style="margin-left: 20px;"></i>Heating
-									<i class="fa fa-check" style="margin-left: 20px;"></i>Washer
-								</p>	
-							</div> 
-							<div class="clearfix"> </div>
-						</div>
-						<div class="rooms-left wow slideInLeft" data-wow-delay="0.3s">
-							<div class="rooms-text">
-								<h2 style="margin-top: 20px;">Other Facilities</h2>
-								<p class="text-center" style="color: black;">
-									<i style="margin-top:20px;"></i><b>Extra People :</b> No Charge
-									<i style="margin-left: 20px;"></i><b>Security Deposit :</b> £100
-									<i style="margin-left: 20px;"></i><b>Cleaning Fee :</b> £30
-								</p>	
-								<p class="text-center" style="color: blue; margin-top: 30px; font-size: 25px; font-family: Comic Sans MS;">
-									 <i><b>For booking or more details, <a target="_blank" href={{$link}}><u>click here!</u></a></b><i>
-								</p>	
-							</div> 
-							<div class="clearfix"> </div>
-						</div>
-						<div class="clearfix"> </div>
+						</nav>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
 		</div>
-		<!--gallery start here-->
-		<div class="gallery" id="gallery">
+		<!--header end here-->
+		<!--header end here-->
+		<!-- single starts here -->
+		
+		<div class="single">
 			<div class="container">
-				<div class="gallery-main wow zoomIn" data-wow-delay="0.3s">
-					<div class="gallery-top">
-						<h1>More Pictures...</h1>
+				<div class="single-top wow bounceInLeft" data-wow-delay="0.3s">
+					<img class="img-responsive wow fadeInUp animated" data-wow-delay=".5s" src="images/property3.jpg" alt="" />
+					<div class="lone-line">
+						<h1>Studio flat,own Kitchen & toilet, internet, King's Cros</h1>
+						<h2>Description</h2>
+						<h4>£68 per night</h4>	
+						<p class="wow fadeInLeft animated" data-wow-delay=".5s">It's a modern studio flat with separate kitchen (No door in between kitchen and room but it separated by a stairs, please see the photos), separate bathroom.Perfect flat for small families up to 2 people, Bright and quiet studio flat with its own entrance, separate kitchen and bathroom. Double bed, wardrobe, Tv, wifi, fully equipped kitchen, hairdryer,iron etc available.
+						This appartement is amazingly located on King’s cross Road which runs between Chancery Lane and Kings Cross tube stations providing easy access to tremendous tube lines (Central/Victoria/Piccadilly/Northern/Circle/Hammersmith & City/Metropolitan) as well as St Pancras International mainline station. Due to its strategic position it is also within walking distance of the West End and the City. 
+						Two restaurants in ground floor where you will get indian delicious food, Costa coffee and a small supermarket just across the road.</p>
+						<ul class="grid-blog">
+							<p class="wow fadeInLeft text-center" data-wow-delay=".5s"style="color: black;">
+									<i class="fa fa-check" style="margin-top: 10px; color: black;"></i>Family/Kid Friendly
+									<i class="fa fa-check" style="margin-left: 20px;"></i>Wireless Internet
+									<i class="fa fa-check" style="margin-left: 20px; color: black;"></i>Dryer
+									<i class="fa fa-check" style="margin-left: 20px;"></i>Tv
+								</p>
+								<p  class="wow fadeInLeft text-center" data-wow-delay=".5s" style="color: black;">
+									<i class="fa fa-check" style="margin-top: 20px; color: black;"></i>Shampoo
+									<i class="fa fa-check" style="margin-left: 20px;"></i>Iron
+									<i class="fa fa-check" style="margin-left: 20px;"></i>Heating
+									<i class="fa fa-check" style="margin-left: 20px;"></i>Washer
+								</p>	
+						</ul>
+						<h2 style="margin-bottom: 20px;">Other Facilities</h2>
+						<ul  class="wow fadeInLeft text-center" data-wow-delay=".5s">
+							<p  class="wow fadeInLeft text-center" data-wow-delay=".5s" style="color: black;">
+								<i style="margin-top:20px;"></i><b>Extra People :</b> No Charge
+								<i style="margin-left: 20px;"></i><b>Security Deposit :</b> £100
+								<i style="margin-left: 20px;"></i><b>Cleaning Fee :</b> £30
+							</p>		
+						</ul>
+						<p  class="wow fadeInLeft text-center" data-wow-delay=".5s" style="color: #ac2048; margin-top: 15px; font-size: 25px; font-family: Comic Sans MS;">
+							<i><b>For booking or more details, <a style="color: #ac2048;" target="_blank" href={{$link}}><u>click here!</u></a></b><i>
+							</p>
+							<div class="clearfix"></div>	
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="gallery-bott">
-						 @foreach($data as $d)
-						
+
+					
+				</div>		
+			</div>
+			<!---->
+			<!--single end here-->
+
+
+			<!--gallery start here-->
+			<div class="gallery" id="gallery">
+				<div class="container">
+					<div class="gallery-main wow zoomIn" data-wow-delay="0.3s">
+						<div class="gallery-top">
+							<h1>More Pictures...</h1>
+						</div>
+						<div class="gallery-bott">
+							@foreach($data as $d)
+							
 							<div class="col-md-4 col1 gallery-grid">
-								<a href="img/property3/{{$d->file_path}}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+								<a href="img/property2/{{$d->file_path}}" rel="title" class="b-link-stripe b-animate-go  thickbox">
 
 									<figure class="effect-bubba">
 										<img class="img-responsive" src="img/property3/{{$d->file_path}}" alt="">
@@ -173,79 +155,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</a>
 							</div>
 							
-						@endforeach 
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--gallery end here-->
-		<script src="js_home/jquery.chocolat.js"></script>
-		<link rel="stylesheet" href="css_home/chocolat.css" type="text/css" media="screen" charset="utf-8">
-		<!--light-box-files -->
-		<script type="text/javascript" charset="utf-8">
-			$(function() {
-				$('.gallery-grid a').Chocolat();
-			});
-		</script>
-
-		<!--room end here-->
-		<!--footer start here-->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-main">
-					<div class="col-md-3 ftr-grid wow zoomIn" data-wow-delay="0.3s">
-						<div class="ftr-logo">
-							<img src="images/ftr-logo.png"  alt="">
+							@endforeach 
+							<div class="clearfix"> </div>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-						<a href="single.html" class="ftr-btn">Read More</a>
 					</div>
-					<div class="col-md-3 ftr-grid ftr-mid wow zoomIn" data-wow-delay="0.3s">
-						<h3>Address</h3>
-						<span class="ftr-line flm"> </span>
-						<p>Eye Associates Of Virginia?</p>
-						<p>5875 Bremo Road </p>
-						<p>Richmond, VA(Virginia) 23226 </p>
-						<p>(804) 287-4216 </p>
-						<p>Alice Merriman</p>
+				</div>
+			</div>
+			<!--gallery end here-->
+			<script src="js_home/jquery.chocolat.js"></script>
+			<link rel="stylesheet" href="css_home/chocolat.css" type="text/css" media="screen" charset="utf-8">
+			<!--light-box-files -->
+			<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('.gallery-grid a').Chocolat();
+				});
+			</script>
 
+			<!--room end here-->
+			
+			<!--copy rights start here-->
+			<!--copy rights start here-->
+			<div class="copy-right">
+				<div class="container">
+					<div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
+						<p>© 2016 Mr Hotel. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 					</div>
-					<div class="col-md-3 ftr-grid ftr-rit wow zoomIn" data-wow-delay="0.3s">
-						<h3>Contact Us</h3>
-						<form>
-							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-							<input type="submit" value="Send" />
-						</form>
-						<ul class="ftr-icons">
-							<li><a href="#"><span class="fa"> </span></a></li>
-							<li><a href="#"><span class="tw"> </span></a></li>
-							<li><a href="#"><span class="link"> </span></a></li>
-							<li><a href="#"><span class="gmail"> </span></a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 ftr-grid ftr-last-gd ftr-rit wow zoomIn" data-wow-delay="0.3s">
-						<h3>Quick Link</h3>
-						<ul class="ftr-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Services </a></li>
-							<li><a href="room.html">Rooms</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
 				</div>
 			</div>
-		</div>
-		<!--footer end here-->
-		<!--copy rights start here-->
-		<div class="copy-right">
-			<div class="container">
-				<div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
-					<p>© 2016 Mr Hotel. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-				</div>
-			</div>
-		</div>
-	</body>
-	</html>
+		</body>
+		</html>

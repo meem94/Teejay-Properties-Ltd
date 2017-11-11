@@ -73,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <span class="icon-bar"></span>
                           </button>
                           <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-                                <a class="navbar-brand"  href="{{ url('/') }}"><img src="images/logo.png" /></a>
+                                <a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
                           </div>
                       </div>
                     <div id="navbar" class="navbar-collapse collapse">
