@@ -58,21 +58,21 @@
                 <ul class="nav navbar-nav">
             
                     @if(Route::currentRouteName() == 'property1')
-                        <li class="active"><a href="/admincontrol.property1">Property1</a></li>
+                        <li class="active"><a href="{{ url('/admincontrol.property1') }}">Property1</a></li>
                     @else
-                        <li><a href="/admincontrol.property1">Property1</a></li>
+                        <li><a href="{{ url('/admincontrol.property1') }}">Property1</a></li>
                     @endif
             
                     @if(Route::currentRouteName() == 'property2')
-                        <li class="active"><a href="/admincontrol.property2">Property2</a></li>
+                        <li class="active"><a href="{{ url('/admincontrol.property2') }}">Property2</a></li>
                     @else
-                        <li><a href="/admincontrol.property2">Property2</a></li>
+                        <li><a href="{{ url('/admincontrol.property2') }}">Property2</a></li>
                     @endif
 
                     @if(Route::currentRouteName() == 'property3')
-                        <li class="active"><a href="/admincontrol.property3">Property3</a></li>
+                        <li class="active"><a href="{{ url('/admincontrol.property3') }}">Property3</a></li>
                     @else
-                        <li><a href="/admincontrol.property3">Property3</a></li>
+                        <li><a href="{{ url('/admincontrol.property3') }}">Property3</a></li>
                     @endif
                     
                 
@@ -170,7 +170,7 @@
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form id="form" method="POST" action="\admin\insert\{{$request}}" enctype="multipart/form-data" role="form">
+                <form id="form" method="POST" action="{{ url('/admin/insert/$request') }}" enctype="multipart/form-data" role="form">
                     {{csrf_field()}}
 
                     <div class="modal-header">
@@ -203,9 +203,9 @@
             @foreach($data1 as $dat)
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a class="lightbox" href="/img/{{$request}}/{{$dat->file_path}}">
+                    <a class="lightbox" href="img/{{$request}}/{{$dat->file_path}}">
                         
-                        <img src="/img/{{$request}}/{{$dat->file_path}}">
+                        <img src="img/{{$request}}/{{$dat->file_path}}">
                     </a>
                     <div class="edit">
                         <a type="submit" data-toggle="modal" data-target="#exampleModal{{$dat->id}}"    
@@ -234,7 +234,7 @@
                           </strong>
                         </div>
                         <div class="modal-body col-md-offset-3">
-                          <form method="POST" action="/admin/delete/{{$request}}">
+                          <form method="POST" action="{{ url('/admin/delete/$request') }}">
                             {{csrf_field()}}
                             <input type="hidden" name="property" value="{{$request}}">
                             <input type="hidden" name="rid" value="{{$dat->id}}">
@@ -264,7 +264,7 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form method="POST" action="/admin/edit/{{$request}}" enctype="multipart/form-data">
+                          <form method="POST" action="{{ url('/admin/edit/$request') }}" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <input type="hidden" name="property" value="{{$request}}">
                             <input type="hidden" name="rid" value="{{$dat->id}}">
