@@ -6,17 +6,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>TeeJay Properties LTD</title>
+    <title>TeeJay Properties | Home</title>
+    <link rel="shortcut icon" type="image/png" href="favicon12.ico">
     <link href="css_home/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js_home/jquery-1.11.0.min.js"></script>
     <!-- Custom Theme files -->
     <link href="css_home/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css_home/style1.css" rel="stylesheet" type="text/css" media="all" /> 
     <!-- Custom Theme files -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Teejay Properties LTD, Teejay Properties, Teejay" />
-    <link rel="shortcut icon" type="image/png" href="favicon12.ico">
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="teejay1.ico"> -->
+    <meta name="keywords" content="Mr Hotel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!--Google Fonts-->
     <link href='//fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
@@ -24,48 +26,87 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--google fonts-->
     <!-- animated-css -->
     <link href="css_home/animate.css" rel="stylesheet" type="text/css" media="all">
-    <!-- animated-css -->
+    <script src="js_home/wow.min.js"></script>
+    <script>
+     new WOW().init();
+ </script>
+ <!-- animated-css -->
+ <script src="js_home/modernizr.js"></script>
+ <script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".branch-gd").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".branch-gd").hasClass("hover")) {
+                    $(this).closest(".branch-gd").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".branch-gd").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+<script src="js_home/bootstrap.min.js"></script>
+
 
 </head>
 <body>
+
     <!--header start here-->
     <!-- NAVBAR
         ================================================== -->
-    <div class="header">
-        <div class="fixed-header">  
+        <div class="header">
+            <div class="fixed-header">  
 
-            <div class="navbar-wrapper">
-                <div class="container">
+                <div class="navbar-wrapper">
+                  <div class="container">
                     <nav class="navbar navbar-inverse navbar-static-top">
-                       <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
-                            <div class="wow fadeInLeft animated" data-wow-delay="0.3s">
-                                <a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
-                            </div>
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <nav class="cl-effect-16" id="cl-effect-16">
-                                <ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
-                                    <li><a  class="active" href="{{ url('/') }}" data-hover="Home">Home</a></li>
-                                    <li><a  href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
-                                    <li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="clearfix"> </div>
+                     <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="wow fadeInLeft animated" data-wow-delay="0.3s">
+                        <a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <nav class="cl-effect-16" id="cl-effect-16">
+                        <ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
+                            <li><a  class="active" href="{{ url('/') }}" data-hover="Home">Home</a></li>
+                            <li><a  href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+                            <li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
+                        </ul>
                     </nav>
                 </div>
                 <div class="clearfix"> </div>
-            </div>
+            </nav>
         </div>
+        <div class="clearfix"> </div>
     </div>
+</div>
+</div>
 <!--header end here-->
-<!--banner  start hwew-->
+<!--banner  start here-->
 <div class="banner">
     <div class="container">
         <div class="banner-main wow zoomIn" data-wow-delay="0.3s">
@@ -76,6 +117,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 </div>
 <!--BANNER END HERE-->
+
 <!--leaves start here-->
 <div class="leaves">
     <div class="container">
@@ -87,7 +129,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 </div>
 <!--leaves end here-->
-<!--information start here-->
+
+<!-- information start here -->
 <div class="information">
     <div class="container">
         <div class="information-main">
@@ -97,8 +140,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <img src="images/s1.png" alt="">
                 </div>
                 <div class="info-right">
-                    <h4>Star Hotel</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                    <h4>Explore</h4>
+                    <p>Sleek serviced apartments, homely self catering accommodation – Explore London with peace of mind.</p>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -107,8 +150,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <img src="images/s2.png" alt="">
                 </div>
                 <div class="info-right">
-                    <h4>services</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                    <h4>Services</h4>
+                    <p>Get all the services you need at free of cost or at a reasonable cost</p>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -131,7 +174,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="info-right">
                     <h4>Food</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                    <p>Self contained property offering clean, comfortable, furnished kitchen so that you can prepare and cook your own meals.</p>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -162,6 +205,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 </div>
 <!--information end here-->
+
 
 <!--branches start here-->
 <div class="branches">
@@ -202,66 +246,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
             <div class="col-md-3 branch-gd-main">
-              <div class="branch-gd went-branc2">
-                <a href="{{ url('/property_3') }}">
-                    <img src="img/property3/2.jpg" alt="" class="img-responsive">
-                </a>
+                <div class="branch-gd went-branc2">
+                    <a href="{{ url('/property_3') }}">
+                        <img src="img/property3/2.jpg" alt="" class="img-responsive">
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="clearfix"> </div>
     </div>
-    <div class="clearfix"> </div>
-</div>
 </div>
 <!--branches end here-->
 
 <!--copy rights start here-->
 <div class="copy-right">
     <div class="container">
-       <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
-        <p>© 2016 Mr Hotel. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+        <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
+            <p>© 2016 Mr Hotel. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+        </div>
     </div>
 </div>
-</div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js_home/jquery-1.11.0.min.js"></script>
-<script src="js_home/wow.min.js"></script>
-<script>
-   new WOW().init();
-</script>
-<script src="js_home/modernizr.js"></script>
-<script>
-    $(document).ready(function(){
-        if (Modernizr.touch) {
-            // show the close overlay button
-            $(".close-overlay").removeClass("hidden");
-            // handle the adding of hover class when clicked
-            $(".branch-gd").click(function(e){
-                if (!$(this).hasClass("hover")) {
-                    $(this).addClass("hover");
-                }
-            });
-            // handle the closing of the overlay
-            $(".close-overlay").click(function(e){
-                e.preventDefault();
-                e.stopPropagation();
-                if ($(this).closest(".branch-gd").hasClass("hover")) {
-                    $(this).closest(".branch-gd").removeClass("hover");
-                }
-            });
-        } else {
-            // handle the mouseenter functionality
-            $(".branch-gd").mouseenter(function(){
-                $(this).addClass("hover");
-            })
-            // handle the mouseleave functionality
-            .mouseleave(function(){
-                $(this).removeClass("hover");
-            });
-        }
-    });
-</script>
-<script src="js_home/bootstrap.min.js"></script>
-
 </body>
 </html>
