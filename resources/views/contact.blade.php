@@ -111,7 +111,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js_home/jquery-1.11.0.min.js"></script>
 	<script src="js_home/wow.min.js"></script>
 	<script>
 		new WOW().init();

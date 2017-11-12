@@ -27,6 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- animated-css -->
 	<link href="css_home/animate.css" rel="stylesheet" type="text/css" media="all">
 	<!-- animated-css -->
+	<link rel="stylesheet" href="css_home/chocolat.css" type="text/css" media="screen" charset="utf-8">
 </head>
 
 <body>
@@ -150,34 +151,9 @@ $link = 'https://www.airbnb.co.uk/rooms/20995187?location=Leswin%20Place%2C%20Lo
 	</div>
 </div>
 <!--gallery end here-->
-<!-- <div class="single">
-	<div class="container">
-		<div class="single-top wow bounceInLeft" data-wow-delay="0.3s">
-			<div class="lone-line">
-				<h1>Other Properties</h1>
-				<ul  class="wow fadeInLeft text-center" data-wow-delay=".5s">
-					<i style="margin-top:20px;"></i><b>Extra People :</b> No Charge
-					<i style="margin-left: 20px;"></i><b>Security Deposit :</b> £250
-					<i style="margin-left: 20px;"></i><b>Cleaning Fee :</b> £45
-					<i style="margin-left: 20px;"></i><b>Weekly Discount :</b> 10%
-				</ul>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-</div> -->
-<script src="js_home/jquery.chocolat.js"></script>
-<link rel="stylesheet" href="css_home/chocolat.css" type="text/css" media="screen" charset="utf-8">
-<!--light-box-files -->
-<script type="text/javascript" charset="utf-8">
-	$(function() {
-		$('.gallery-grid a').Chocolat();
-	});
-</script>
 
 <!--room end here-->
 
-<!--copy rights start here-->
 <!--copy rights start here-->
 <div class="copy-right">
 	<div class="container">
@@ -187,8 +163,6 @@ $link = 'https://www.airbnb.co.uk/rooms/20995187?location=Leswin%20Place%2C%20Lo
 	</div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js_home/jquery-1.11.0.min.js"></script>
 <script src="js_home/wow.min.js"></script>
@@ -196,5 +170,12 @@ $link = 'https://www.airbnb.co.uk/rooms/20995187?location=Leswin%20Place%2C%20Lo
 	new WOW().init();
 </script>
 <script src="js_home/bootstrap.min.js"></script>
+<script src="js_home/jquery.chocolat.js"></script>
+<!--light-box-files -->
+<script type="text/javascript" charset="utf-8">
+	$(function() {
+		$('.gallery-grid a').Chocolat();
+	});
+</script>
 </body>
 </html>

@@ -27,6 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- animated-css -->
 	<link href="css_home/animate.css" rel="stylesheet" type="text/css" media="all">
 	<!-- animated-css -->
+	<link rel="stylesheet" href="css_home/chocolat.css" type="text/css" media="screen" charset="utf-8">
 </head>
 
 <body>
@@ -160,14 +161,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 	<!--gallery end here-->
-	<script src="js_home/jquery.chocolat.js"></script>
-	<link rel="stylesheet" href="css_home/chocolat.css" type="text/css" media="screen" charset="utf-8">
-	<!--light-box-files -->
-	<script type="text/javascript" charset="utf-8">
-		$(function() {
-			$('.gallery-grid a').Chocolat();
-		});
-	</script>
 
 	<!--room end here-->
 
@@ -180,8 +173,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js_home/jquery-1.11.0.min.js"></script>
 	<script src="js_home/wow.min.js"></script>
@@ -189,5 +181,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		new WOW().init();
 	</script>
 	<script src="js_home/bootstrap.min.js"></script>
+	<script src="js_home/jquery.chocolat.js"></script>
+	<!--light-box-files -->
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('.gallery-grid a').Chocolat();
+		});
+	</script>
 </body>
 </html>
