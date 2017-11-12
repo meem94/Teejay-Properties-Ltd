@@ -1585,19 +1585,19 @@ h3.typo1 {
 .contact-top h2 {
     font-size: 3em;
     margin: 0em 0em 0.2em 0em;
-    color: #6F6F8C;
+    color: #ac2048;
     font-family: 'Aladin', cursive;
 }
 .contact-top p {
   font-size: 1em;
-  color: #999;
+  color: #ac2048;
   width: 50%;
   margin: 0 auto;
   line-height: 1.8em;
 }
 .contact-left input[type="text"] {
   font-size: 1em;
-  color: #737373;
+  color: #ac2048;
   width: 49%;
   padding:0.7em 0.7em;
   outline: none;
@@ -1606,7 +1606,7 @@ h3.typo1 {
 }
 .contact-left textarea {
   font-size: 1em;
-  color: #7C7C7C;
+  color: #ac2048;
   width: 100%;
   padding:0.7em 0.7em;
   outline: none;
@@ -1623,13 +1623,13 @@ h3.typo1 {
   font-size: 1em;
   color: #FFF;
   padding: 0.4em 1.5em;
-  background: #F5AF33;
+  background: #ac2048;
   border: none;
   margin: 0.5em 0em 0em 0em;
   outline: none;
 }
 .contact-left input[type="submit"]:hover {
-  background:#6F6F8C;
+  background:#ac2048;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -1640,20 +1640,20 @@ h3.typo1 {
 }
 .contact-right h1 {
   font-size: 2.5em;
-  color:#F5AF33;
+  color:#ac2048;
   margin: 0em 0em 0.5em 0em;
   font-family: 'Aladin', cursive;
 }
 .contact-right  p {
   font-size: 1em;
-  color:#737373;
+  color:#ac2048;
   line-height: 1.8em;
 }
 .contact-right  p a{
-  color: #7B7B7B;
+  color: #ac2048;
 }
 .contact-right  p a:hover{
-  color:#F5AF33;
+  color:#ac2048;
   text-decoration:none;
 }
 .map iframe {

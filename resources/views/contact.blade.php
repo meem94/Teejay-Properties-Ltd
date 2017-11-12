@@ -40,7 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<div class="wow fadeInLeft animated" data-wow-delay="0.3s">
+						<div class="wow fadeInLeft animated" style="display:table-cell; vertical-align:middle; text-align:center" data-wow-delay="0.3s">
 							<a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
 						</div>
 					</div>
@@ -91,8 +91,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-3 contact-right">
 					<h1>Phone</h1>
-					<p>+880 5558 568 78541</p>
-					<p>jaytholiday@gmail.com</a></p>
+					<p>+447714950600</p>
+					<p>+447763559751</p>
+					<p><b>Email:</b> jaytholiday@gmail.com</a></p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
