@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use App\Property_image;
 use Image;
+use File;
+use Session;
+use Redirect;
 class AdminController extends Controller
 {
     public function index1()
@@ -87,6 +90,7 @@ class AdminController extends Controller
         $destinationPath = $destinationPath.$request->filepath;
         /*return $destinationPath;
         File::delete($destinationPath);*/
+        File::delete($destinationPath);
 
         $request->session()->flash('alert-success', 'Image is deleted succesfully!');
         $request = $request->property;
