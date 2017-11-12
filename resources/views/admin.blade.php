@@ -40,7 +40,7 @@
 </head>
 <body>
 <header class="header-frontend">
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -136,7 +136,7 @@
 </header>
 <!--header end-->
 
-<div class="container gallery-container" style="margin-top: 70px;">
+<div class="container gallery-container">
 
     @if(Session::has('alert-success'))
       <div class="alert alert-success alert-dismissable fade in" style="margin-top: 30px;">

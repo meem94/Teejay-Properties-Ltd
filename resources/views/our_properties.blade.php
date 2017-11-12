@@ -8,13 +8,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 	<title>TeeJay Properties LTD</title>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="css_home/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 	<!-- Custom Theme files -->
 	<link href="css_home/style.css" rel="stylesheet" type="text/css" media="all"/>
 	<!-- Custom Theme files -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Teejay Properties LTD, Teejay Properties, Teejay" />
 	<link rel="shortcut icon" type="image/png" href="favicon12.ico">
@@ -39,42 +38,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- NAVBAR
 		================================================== -->
 	<div class="header">
-    <div class="fixed-header">  
-
-            <div class="navbar-wrapper">
-              <div class="container">
-                <nav class="navbar navbar-inverse navbar-static-top">
-                     <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                           <div class="wow fadeInLeft animated" data-wow-delay="0.3s">
-                                <a class="navbar-brand"  href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
-                          </div>
-                      </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-						<nav class="cl-effect-16" id="cl-effect-16">
-							<ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
-								<li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
-								<li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
-								<li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
-							</ul>
-						</nav>
-
-					</div>
-
-                    </div>
-                    <div class="clearfix"> </div>
-                     </nav>
-                  </div>
-                   <div class="clearfix"> </div>
-            </div>
-     </div>
-</div>
-<!--header end here-->
+	    <div class="fixed-header">  
+	        <div class="navbar-wrapper">
+		        <div class="container">
+		            <nav class="navbar navbar-inverse navbar-static-top">
+		                <div class="navbar-header">
+	                    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		                        <span class="sr-only">Toggle navigation</span>
+		                        <span class="icon-bar"></span>
+		                        <span class="icon-bar"></span>
+		                        <span class="icon-bar"></span>
+	                     	</button>
+	                        <div class="wow fadeInLeft animated" data-wow-delay="0.3s">
+	                            <a class="navbar-brand"  href="{{ url('/') }}">
+	                            	<img style="max-width: 290px;" src="images/logo.png" />
+	                            </a>
+	                        </div>
+	                    </div>
+	                	<div id="navbar" class="navbar-collapse collapse">
+							<nav class="cl-effect-16" id="cl-effect-16">
+								<ul class="nav navbar-nav" style="font-family: Aladin; font-size: 20px; font-style: bold;">
+									<li><a  href="{{ url('/') }}" data-hover="Home">Home</a></li>
+									<li><a class="active" href="{{ url('/our_properties') }}" data-hover="Our Properties">Our Properties</a></li>  
+									<li><a  href="{{ url('/contact') }}" data-hover="Contact Us">Contact Us</a></li>                   
+								</ul>
+							</nav>
+						</div>
+	                	<div class="clearfix"> </div>
+	                </nav>
+	            </div>
+	            <div class="clearfix"> </div>
+	        </div>
+	    </div>
+	</div>
+	<!--header end here-->
 		
 		<!--room start here-->
 		<div class="rooms">
