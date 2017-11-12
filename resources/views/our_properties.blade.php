@@ -10,18 +10,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="css_home/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js_home/jquery-1.11.0.min.js"></script>
 	<!-- Custom Theme files -->
 	<link href="css_home/style.css" rel="stylesheet" type="text/css" media="all"/>
 	<!-- Custom Theme files -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Mr Hotel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="Teejay Properties LTD, Teejay Properties, Teejay" />
+	<link rel="shortcut icon" type="image/png" href="favicon12.ico">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!--Google Fonts-->
 	<link href='//fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
@@ -30,12 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--google fonts-->
 	<!-- animated-css -->
 	<link href="css_home/animate.css" rel="stylesheet" type="text/css" media="all">
-	<script src="js_home/wow.min.js"></script>
-	<script>
-		new WOW().init();
-	</script>
 	<!-- animated-css -->
-	<script src="js_home/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -161,13 +152,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<!--room end here-->
 		
-		<!-- <!--copy rights start here-->
+		<!--copy rights start here-->
 		<div class="copy-right">
 			<div class="container">
 				<div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
 					<p>© 2016 Mr Hotel. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 				</div>
 			</div>
-		</div> 
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js_home/jquery-1.11.0.min.js"></script>
+	<script src="js_home/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="js_home/bootstrap.min.js"></script> 
 	</body>
 	</html>
