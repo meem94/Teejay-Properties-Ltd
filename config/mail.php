@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'mailgun'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('meemahmed94@gmail.com'),
+    'username' => env('postmaster@sandbox489f261d13b04c3f9248fb43846fef73.mailgun.org'),
 
-    'password' => env('osciloscope8913'),
+    'password' => env('f2569985fb04e430e8c00c700508eecc'),
 
     /*
     |--------------------------------------------------------------------------
