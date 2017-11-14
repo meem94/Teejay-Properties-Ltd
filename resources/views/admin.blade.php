@@ -155,13 +155,13 @@
     @endif
 
     @if(Route::currentRouteName() == 'admin')
-        <h1><u>Property 1</u></h1>
+        <h1><u>5 Bed HOUSE! 2 Bath! Cute GARDEN! in Stoke Newington</u></h1>
     @elseif(Route::currentRouteName() == 'property1')
-        <h1><u>Property 1</u></h1>
+        <h1><u>5 Bed HOUSE! 2 Bath! Cute GARDEN! in Stoke Newington</u></h1>
     @elseif(Route::currentRouteName() == 'property2')
-        <h1><u>Property 2</u></h1>
+        <h1><u>Luxury 3bed House!GARDEN!Stoke Newington/ChurchSt!!</u></h1>
     @elseif(Route::currentRouteName() == 'property3')
-        <h1><u>Property 3</u></h1>
+        <h1><u>Studio flat,own Kitchen & toilet, internet, King's Cros</u></h1>
     @endif
 
     <p class="page-description text-center"><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Image</button></p>

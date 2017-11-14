@@ -167,6 +167,7 @@ div#navbar {
     min-height: 0px !important;   
 }
 .navbar-brand {
+    margin-top: 7px;
     float: left;
     height:0px !important;  
     padding:0px !important;  

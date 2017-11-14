@@ -51,7 +51,7 @@ $link = 'https://www.airbnb.co.uk/rooms/20995187?location=Leswin%20Place%2C%20Lo
 							<span class="icon-bar"></span>
 						</button>
 						<div class="wow fadeInLeft animated" style="display:table-cell; vertical-align:middle; text-align:center" data-wow-delay="0.3s">
-							<a class="navbar-brand" href="{{ url('/') }}"><img style="max-width: 290px;" src="images/logo.png" /></a>
+							<a class="navbar-brand" href="{{ url('/') }}"><img style="max-width: 250px;" src="images/logo.png" /></a>
 						</div>
 
 					</div>
@@ -134,7 +134,7 @@ $link = 'https://www.airbnb.co.uk/rooms/20995187?location=Leswin%20Place%2C%20Lo
 			<div class="gallery-bott">
 				@foreach($data as $d)
 				<div class="col-md-4 col1 gallery-grid">
-					<a href="img/property1/{{$d->file_path}}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="img/property1/{{$d->file_path}}" rel="{{$d->header}}" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="img/property1/{{$d->file_path}}" alt="">
 							<figcaption>
