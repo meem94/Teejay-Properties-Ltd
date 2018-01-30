@@ -33,3 +33,7 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::POST('/admin/delete/{id}', ['as'=>'DeleteProperyImage','uses'=>'AdminController@delete']);
 	Route::POST('/admin/edit/{id}', ['as'=>'EditProperyImage','uses'=>'AdminController@update']);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

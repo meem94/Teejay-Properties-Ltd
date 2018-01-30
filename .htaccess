@@ -3,7 +3,12 @@
         Options -MultiViews
     </IfModule>
 
-    RewriteEngine On
+	RewriteEngine On
+Options +FollowSymLinks
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+RewriteRule ^(.*)$ public/$1 [L]
 
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]

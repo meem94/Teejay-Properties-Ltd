@@ -164,7 +164,8 @@
         <h1><u>Studio flat,own Kitchen & toilet, internet, King's Cros</u></h1>
     @endif
 
-    <p class="page-description text-center"><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Image</button></p>
+    <p class="page-description text-center"><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Image</button>
+    <button class="btn btn-success">Upgrade</button></p>
     
 
     <div class="modal fade" id="myModal">

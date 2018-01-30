@@ -262,7 +262,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="copy-right">
     <div class="container">
         <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
-            <p>© 2016 Mr Hotel. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            <p>© 2016 Mr Hotel. All Rights Reserved </p>
         </div>
     </div>
 </div>
